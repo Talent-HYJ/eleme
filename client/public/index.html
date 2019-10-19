@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>饿了么</title>
+	<!-- <script>  (function () { var html = document.documentElement;
+	 function onWindowResize() { html.style.fontSize = html.getBoundingClientRect().width / 20 + 'px'; } 
+	 window.addEventListener('resize', onWindowResize); onWindowResize(); })();
+   </script> -->
+   <script>
+
+window.onload = function(){
+    /*375代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;
+    100代表换算比例，这里写100是为了以后好算,
+    比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+    getRem(750,75)
+};
+window.onresize = function(){
+    getRem(750,75)
+};
+function getRem(pwidth,prem){
+    var html = document.getElementsByTagName("html")[0];
+    var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+    html.style.fontSize = oWidth/pwidth*prem + "px";
+}
+
+   </script>
+  </head>
+  <body>
+    
+    <div id="root"></div>
+  
+  </body>
+</html>

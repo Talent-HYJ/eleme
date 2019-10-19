@@ -1,0 +1,42 @@
+li{
+    list-style: none;
+}
+.box{
+    -webkit-transform: translateZ(0);
+    width: 100%;
+  height:1.2133rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;   
+}
+.footbar{
+
+   
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+width: 100%;
+  height:1.2133rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.footbar li{
+   
+    font-size: .2667rem;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.footbar li p:first-child{
+	font-size: .5333rem;
+}
+.footbar li img{
+    width: .5333rem;
+    height: .5333rem;
+}
