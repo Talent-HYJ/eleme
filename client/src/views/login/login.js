@@ -17,6 +17,7 @@ render(){
                <input type="text" placeholder="手机号" onChange={this.changePhone}/>
                <input type="password" placeholder='密码'/>
            </div>
+           2212
        </div>
     </div>
     )
